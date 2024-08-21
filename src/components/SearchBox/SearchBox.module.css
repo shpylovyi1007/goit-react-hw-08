@@ -1,0 +1,35 @@
+.search {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  
+  .label {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: start;
+    color: var(--label-color);
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .input {
+      border-radius: 6px;
+      padding: 10px 16px;
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .input {
+      padding: 12px 20px;
+    }
+  }

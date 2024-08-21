@@ -1,0 +1,156 @@
+:root {
+  --background-title: #ffffff26;
+  --background-title: #ffffff26;
+  --background-blur: 4px;
+  --label-color: #185bdd;
+  --border-color: #01106e;
+  --link-color: #01106e;
+  --start-btn-color: #b0eaf2;
+  --body-bc: linear-gradient(
+    135deg,
+    rgba(176, 0, 0, 0.88) 0%,
+    rgba(176, 0, 0, 0.88) 8.5%,
+    rgba(185, 10, 10, 0.88) 15%,
+    rgba(195, 20, 20, 0.88) 22.5%,
+    rgba(205, 30, 30, 0.88) 29.5%,
+    rgba(215, 40, 40, 0.88) 37%,
+    rgba(225, 50, 50, 0.88) 46%,
+    rgba(235, 60, 60, 0.88) 52.5%,
+    rgba(245, 70, 70, 0.88) 58.5%,
+    rgba(255, 80, 80, 0.88) 66.5%,
+    rgba(255, 90, 90, 0.88) 74.5%,
+    rgba(255, 100, 100, 0.88) 81%,
+    rgba(255, 110, 110, 0.88) 87%,
+    rgba(255, 120, 120, 0.88) 91.95%,
+    rgba(255, 130, 130, 0.88) 95%
+  );
+
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/HeadlandOne-Regular.ttf);
+}
+
+html,
+body {
+  min-height: 100%;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* background-color: #8080804d; */
+  background: var(--body-bc);
+  background-repeat: no-repeat;
+  font-family: myFirstFont;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 20px;
+  }
+}
+
+.addHoverToLink {
+  position: relative;
+  color: var(--link-color);
+}
+
+.addHoverToLink::after {
+  transition: width 0.255s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  border-bottom: 2px solid #000;
+}
+
+.addHoverToLink:hover::after {
+  width: 100%;
+}
+
+.addHoverToButton {
+  border: 2px solid transparent;
+  background-color: var(--start-btn-color);
+  transition: all 0.255s;
+  color: var(--link-color);
+}
+
+.addHoverToButton:hover,
+.addHoverToButton:focus,
+.addHoverToButton:active {
+  border: 2px solid var(--start-btn-color);
+
+  background-color: transparent;
+}
+
+.addHoverToInput {
+  border: 2px solid #fff;
+  transition: border-color 0.3s;
+  outline: none;
+  background-color: transparent;
+}
+
+.addHoverToInput:hover,
+.addHoverToInput:focus,
+.addHoverToInput:active {
+  border-color: darkblue;
+}

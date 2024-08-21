@@ -1,0 +1,113 @@
+.container {
+    background-color: var(--background-title);
+    backdrop-filter: blur(var(--background-blur));
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  
+  .nav {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 375px;
+    height: 58px;
+  }
+  
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .nav {
+      padding: 10px;
+      max-width: 768px;
+      height: 52px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .nav {
+      max-width: 1280px;
+    }
+  }
+  
+  .list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .list {
+      gap: 15px;
+    }
+  }
+  
+  .welcomeText {
+    font-size: 14px;
+    text-align: end;
+    max-width: 100px;
+    font-weight: 550;
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .welcomeText {
+      display: block;
+      max-width: 100%;
+      font-size: 17px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .welcomeText {
+      font-size: 19px;
+    }
+  }
+  
+  .link {
+    font-size: 14px;
+    color: var(--link-color);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .link {
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .link {
+      font-size: 18px;
+    }
+  }
+  
+  .logOut {
+    font-size: 16px;
+    padding: 4px 6px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .logOut {
+      padding: 5px 10px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .logOut {
+      font-size: 18px;
+    }
+  }
